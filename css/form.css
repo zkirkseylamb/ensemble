@@ -1,0 +1,134 @@
+
+
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Varela Round';
+    margin: 0;
+    background-color: #f0e8d9;
+}
+
+#show-popup {
+    background-color:#4e3f41;
+    border: none;
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 15px;
+    color:#f0e8d9;
+    text-decoration: none;
+    width: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+h1 {
+    color:#4e3f41;
+    text-transform: uppercase;
+}
+
+.popup {
+    position: absolute;
+    top: 55%;
+    right: 0px;
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(1.25);
+    width: 250px;
+    padding:20px 30px;
+    background: #f0e8d9;
+    box-shadow: 2px 2px 5px 5px rgba(rgb(75, 50, 61, 0.15));
+    border-radius: 10px;
+    border: 2px solid #4e3f41;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+}
+
+.popup.active {
+    top:55%;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+}
+
+.popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    color: #f0e8d9;
+    background: #4e3f41;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.popup .form h1 {
+    text-align: center;
+    color: #4e3f41;
+    margin: 10px 0px 20px;
+}
+
+.popup .form .form-element {
+    margin: 2px 0px;
+}
+
+.popup .form .form-element label {
+    font-size: 14px;
+    color:#4e3f41;
+}
+
+.popup .form .form-element input[type="text"] {
+    margin: 2px;
+    display: block;
+    width: 100%;
+    outline: none;
+    border: 1px solid #4e3f41;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.dropbtn {
+    background-color: #4e3f41;
+    color: #f0e8d9;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #f0e8d9;
+    color: #4e3f41;
+    box-shadow: 2px 5px #4e3f41;
+}
+
+.info-dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f0e8d9;
+    border-radius: 15px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.dropdown-content h4{
+    color: #4e3f41;
+}
+
+.show {
+    display:block;
+}

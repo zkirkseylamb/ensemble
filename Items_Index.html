@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Ensemble: clothing organizer</title>
+    <link rel="icon" href="./icon/favicon.ico">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style_item.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/form.css"/>
+    <!-- Scripts -->
+    <script src="script/clothing_items.js" defer></script>
+    <script src="script/app.js" defer></script>
+  </head>
+  <body>
+
+    <!-- Page header -->
+    <header>
+      <img id="logo" src="img/ensemble.png" width="70" height="70">
+      <h1>Ensemble</h1>
+      <menu>
+        <ul><a href="http://127.0.0.1:5500/Home_index.html">Home</a></ul>
+        <ul><a href="http://127.0.0.1:5500/Items_Index.html">Items</a></ul>
+        <ul><a href="http://127.0.0.1:5500/Outfits_index.html">Outfits</a></ul>
+      </menu>
+    </header>
+
+    <main>
+
+    <!-- Page title and add button -->
+      <div id="content-bar">
+        <h2>Items</h2>
+        <!-- A button to open the popup form -->
+        <button id="show-popup">New Item</button>
+      </div>
+
+    <!-- Form to add clothing item -->
+      <div class="popup">
+        <div class="close-btn">&times;</div>
+        <form class="form">
+          <h1>Clothing Item</h1>
+            <div class="form-element">
+              <label for="itemName">Name:</label>
+              <input id ="itemName" name ="item-name" type="text"/>
+              <br/>
+            </div>
+            <div class="form-element">
+              <label for="itemType">Type:</label>
+              <select name="itemTypes" id="itemTypes">
+                <option value="hats">Hats</option>
+                <option value="accessories">Accessories</option>
+                <option value="tops">Tops</option>
+                <option value="outerwear">Outerwear</option>
+                <option value="bags">Bags</option>
+                <option value="bottoms">Bottoms</option>
+                <option value="shoes">Shoes</option>
+              </select>
+              <br/>
+            </div>
+            <div class="form-element">
+              <label for="itemDescription">Description:</label>
+              <input id ="itemDescription" name ="item-description" type="text"/>
+              <br/>
+            </div>
+            <div class="form-element">
+              <label for="item-color">Item Color:</label>
+              <select name="colors" id="colors">
+                <option value="pink">Pink</option>
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="purple">Purple</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="brown">Brown</option>
+                <option value="silver">Silver</option>
+                <option value="gold">Gold</option>
+                <option value="multicolor">Multicolor</option>
+              </select>
+              <br/>
+            </div>
+            <div class="form-element">
+              <label for="itemMaterial">Material:</label>
+              <input id ="itemMaterial" name ="item-material" type="text"/>
+              <br/>
+            </div>
+            <div class="form-element">
+              <label for="itemSeason">Season:</label>
+              <select name="seasons" id="seasons">
+                <option value="winter">Winter</option>
+                <option value="spring">Spring</option>
+                <option value="summer">Summer</option>
+                <option value="fall">Fall</option>
+              </select>
+              <br/>
+            </div>
+            <div class="form-element">
+              <label for="itemBrand">Brand:</label>
+              <input id ="itemBrand" name ="item-material" type="text"/>
+              <br/>
+            </div>
+            <div class="form-element">
+              <input type="file" id="myFile" name="filename">
+              <input type="submit">
+              <br/>
+            </div>
+            <div class="form-element">
+              <button type="submit" class="btn">Add Item</button>
+            </div>
+      </form>
+    </div>
+
+      <!-- Displays clothing item cards -->
+      <section id="products-cards-container">
+      </section>
+
+    
+    <div id="direction-arrows">
+      <img id="back-arrow" src="img/backspace-fill.svg"/>
+      <img id="front-arrow"src="img/backspace-reverse-fill.svg"/>
+    </div>
+    </main>
+    <button onclick="myFunction()">Toggle dark mode</button>
+    <footer>&copy;Zawadi Kirksey-Lamb</footer>
+  </body>
+</html>

@@ -1,0 +1,322 @@
+.dark-mode {
+    background-color: black;
+}
+
+body {
+    height: 100%vh;
+    font-family: 'Varela Round';
+    margin: 0;
+    background-color: #f0e8d9;
+
+}
+
+a {
+    color: #f0e8d9;
+    text-decoration: none;
+  }
+
+header{
+    height: 80px;
+    font-family: 'Varela Round';
+    background-color:#4e3f41;
+    display: flex;
+    flex-direction: row;
+}
+
+header h1{
+    color: #f0e8d9;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    flex-basis: 80%;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    height: 50%px;
+}
+
+menu{
+    text-align: center;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    height: 50%px;
+}
+
+menu ul{
+    font-size: 20px;
+    border-right: 3px solid #f0e8d9;
+    line-height: 10px;
+    padding: 5px;
+    display: inline-block;
+    color: #f0e8d9;
+    letter-spacing: 2px;
+}
+
+menu ul:last-child {
+    border-right: none
+}
+
+menu ul:hover{
+    background-color: #f0e8d9;
+    color: #4e3f41;
+}
+
+
+#content-bar{
+    display: flex; 
+    flex-direction: row;
+    padding: 5px;
+    border-bottom: 5px solid #4e3f41;
+    margin: auto;
+    width: 90%;
+    align-items: center;
+}
+
+#content-bar h2 {
+    color:#4e3f41;
+    font-size: 30px;
+    flex-basis: 90%;
+}
+
+.open-button {
+    background-color:#4e3f41;
+    border: none;
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 15px;
+    color:#f0e8d9;
+    text-decoration: none;
+    width: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+
+#products-cards-container {
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 20px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 20px;
+    padding-top: 60px;
+}
+
+.products-cards {
+    background-color: #DBB5B5;
+    box-shadow: 0 5px 5px 0 rgba(121, 62, 87, 0.8);
+    border-radius: 15px;
+    height: 33vh;
+}
+
+.products-cards img {
+    display: block;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100px;
+    height: 80px;
+}
+  
+.products-cards:hover {
+    box-shadow: 0 8px 16px 0 rgba(54, 3, 34, 0.89);
+}
+  
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.container h4 {
+    font-family: 'Varela Round';
+    font-size: 15px;
+    color:#4e3f41;
+    border-radius: 10px;
+}
+
+
+#direction-arrows {
+    display: flex; 
+    flex-direction: row;
+    padding: 5px;
+    margin-left: 37%;
+}
+
+#back-arrow {
+    flex-basis: 8%;
+}
+
+#front-arrow {
+    flex-basis: 8%;
+    margin-left: 25%;
+}
+
+footer {
+    padding-top: 10px;
+    color: #4e3f41;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width :600px) {
+
+    .dark-mode {
+        background-color: black;
+    }
+    
+    body {
+        height: 100%vh;
+        font-family: 'Varela Round';
+        margin: 0;
+        background-color: #f0e8d9;
+    }
+
+    a {
+        color: #f0e8d9;
+        text-decoration: none;
+      }
+    
+    header{
+        height: 80px;
+        font-family: 'Varela Round';
+        background-color:#4e3f41;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    header h1{
+        color: #f0e8d9;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        flex-basis: 50%;
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        height: 50%px;
+    }
+    
+    menu{
+        text-align: center;
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        height: 50%px;
+    }
+    
+    menu ul{
+        font-size: 15px;
+        border-right: 2px solid #f0e8d9;
+        line-height: 8px;
+        padding: 2px;
+        display: inline-block;
+        color: #f0e8d9;
+        letter-spacing: 1px;
+    }
+    
+    menu ul:last-child {
+        border-right: none
+    }
+    
+    menu ul:hover{
+        background-color: #f0e8d9;
+        color: #4e3f41;
+    }
+    
+    #content-bar{
+        display: flex; 
+        flex-direction: row;
+        padding: 2px;
+        border-bottom: 3px solid #4e3f41;
+        margin: auto;
+        width: 90%;
+        align-items: center;
+    }
+    
+    #content-bar h2 {
+        color:#4e3f41;
+        font-size: 20px;
+        flex-basis: 90%;
+    }
+    
+    .open-button {
+        background-color:#4e3f41;
+        border: none;
+        padding: 10px 5px;
+        text-align: center;
+        font-size: 10px;
+        color:#f0e8d9;
+        text-decoration: none;
+        width: 100px;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+    
+    
+    #products-cards-container {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 20px;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 20px;
+        padding-top: 40px;
+    }
+    
+    .products-cards {
+        background-color: #DBB5B5;
+        box-shadow: 0 5px 5px 0 rgba(121, 62, 87, 0.8);
+        border-radius: 15px;
+        height: 33vh;
+    }
+    
+    .products-cards img {
+        display: block;
+        margin-top: 5vh;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100px;
+        height: 80px;
+    }
+      
+    .products-cards:hover {
+        box-shadow: 0 8px 16px 0 rgba(54, 3, 34, 0.89);
+    }
+      
+    .container {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .container h4 {
+        font-family: 'Varela Round';
+        font-size: 15px;
+        color:#4e3f41;
+        border-radius: 10px;
+    }
+    
+    
+    #direction-arrows {
+        display: flex; 
+        flex-direction: row;
+        padding: 5px;
+        margin-left: 37%;
+    }
+    
+    #back-arrow {
+        flex-basis: 8%;
+    }
+    
+    #front-arrow {
+        flex-basis: 8%;
+        margin-left: 25%;
+    }
+    
+    footer {
+        padding-top: 10px;
+        color: #4e3f41;
+        bottom: 0;
+        width: 100%;
+    }
+}
